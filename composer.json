@@ -6,7 +6,7 @@
   "authors": [
     {
       "name": "Trần Duy",
-      "email": "your@email.com"
+      "email": "tamuon00@gmail.com"
     }
   ],
   "require": {
@@ -21,12 +21,6 @@
       "router/",
       "Backend/",
       "Frontend/"
-    ]
-  },
-  "scripts": {
-    "start": "php -S localhost:8000 -t Frontend/public",
-    "post-create-project-cmd": [
-      "@start"
     ]
   },
   "minimum-stability": "stable",
