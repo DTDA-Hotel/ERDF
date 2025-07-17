@@ -1,0 +1,39 @@
+{
+  "name": "pamas/erd",
+  "description": "ERD - A lightweight PHP MVC framework.",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Trần Duy",
+      "email": "your@email.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "erd\\": "core/"
+    },
+    "classmap": [
+      "router/",
+      "Backend/",
+      "Frontend/"
+    ],
+    "files": [
+      "index.php"
+    ]
+  },
+  "scripts": {
+    "start": [
+      "php -S localhost:8000"
+    ],
+    "post-install-cmd": [
+      "@start"
+    ]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
