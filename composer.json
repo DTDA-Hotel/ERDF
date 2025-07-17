@@ -21,16 +21,11 @@
       "router/",
       "Backend/",
       "Frontend/"
-    ],
-    "files": [
-      "index.php"
     ]
   },
   "scripts": {
-    "start": [
-      "php -S localhost:8000"
-    ],
-    "post-install-cmd": [
+    "start": "php -S localhost:8000 -t Frontend/public",
+    "post-create-project-cmd": [
       "@start"
     ]
   },
